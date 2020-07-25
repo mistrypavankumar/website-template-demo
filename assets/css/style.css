@@ -1,0 +1,176 @@
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Signika:300,700");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#header {
+  background-color: rgba(0, 22, 46, 0.7);
+  width: 100%;
+  height: 3.25em;
+  position: fixed;
+  z-index: 9999;
+}
+
+#header #logo {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Signika';
+  font-weight: 600;
+  font-size: 1.5em;
+  line-height: 2;
+  margin-left: 20px;
+}
+
+#header #menu {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Signika';
+  font-weight: 500;
+  float: right;
+  line-height: 3;
+  margin-right: 20px;
+}
+
+nav {
+  float: right;
+  position: absolute;
+  z-index: 9999;
+  right: 0;
+  width: 18.5em;
+  overflow: hidden;
+  height: 100vh;
+  background-color: #00162e;
+  padding: 2em;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  margin-top: 3em;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+
+nav ul li a {
+  color: #b1b1b1;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+#banner {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4))), url("../../images/banner.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url("../../images/banner.jpg");
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  padding: 8em 0 6em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#banner .inner {
+  position: relative;
+  padding: 8em 0 6em 0;
+}
+
+#banner .inner h1 {
+  color: #fff;
+  font-size: 3em;
+  font-family: 'Signika';
+  margin-bottom: 0.5em;
+}
+
+#banner .inner p {
+  color: #fff;
+  font-size: 1.5em;
+  opacity: 0.5;
+  position: relative;
+  margin: 0 0 1.5em 0;
+  width: 60%;
+  -webkit-transform: translate(32%);
+          transform: translate(32%);
+}
+
+#banner .inner .button {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Signika';
+  font-size: 1.5em;
+  font-weight: 600;
+  border: 2px solid rgba(200, 200, 200, 0.2);
+  padding: 0.5em 1em;
+}
+
+#banner .inner .button:hover {
+  background-color: rgba(197, 195, 195, 0.1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.wrapper {
+  position: relative;
+  padding: 6em 0 4em 0;
+  background-color: #062038;
+}
+
+.wrapper .inner {
+  text-align: center;
+}
+
+.wrapper .inner h1 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  color: #fff;
+  font-family: 'Signika';
+}
+
+.wrapper .inner p {
+  color: #666363;
+  font-size: 1.3em;
+  font-family: 'Signika';
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2em;
+}
+
+.video {
+  background: rgba(255, 255, 255, 0.075);
+  margin: 0 0em 3em 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5em;
+}
+
+.video img {
+  width: 550px;
+}
+
+.video p {
+  padding: 1em 0;
+  color: #cac7c7 !important;
+}
+/*# sourceMappingURL=style.css.map */

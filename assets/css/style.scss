@@ -1,0 +1,153 @@
+@charset "UTF-8";
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Signika:300,700");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    background-color: rgba(0, 22, 46, 0.7);
+    width: 100%;
+    height: 3.25em;
+    position: fixed;
+    z-index: 9999;
+    #logo {
+        color: #fff;
+        text-decoration: none;
+        font-family: 'Signika';
+        font-weight: 600;
+        font-size: 1.5em;
+        line-height: 2;
+        margin-left: 20px;
+    }
+    #menu {
+        color: #fff;
+        text-decoration: none;
+        font-family: 'Signika';
+        font-weight: 500;
+        float: right;
+        line-height: 3;
+        margin-right: 20px;
+    }
+}
+
+nav {
+    float: right;
+    position: absolute;
+    z-index: 9999;
+    right: 0;
+    width: 18.5em;
+    overflow: hidden;
+    height: 100vh;
+    background-color: rgb(0, 22, 46);
+    padding: 2em;
+    ul {
+        list-style: none;
+        li {
+            margin-top: 3em;
+            padding-bottom: 10px;
+            border-bottom: 1px solid gray;
+            a {
+                color: rgb(177, 177, 177);
+                text-decoration: none;
+                font-size: 1.1em;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+#banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url('../../images/banner.jpg');
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    padding: 8em 0 6em 0;
+    display: flex;
+    justify-content: center;
+    .inner {
+        position: relative;
+        padding: 8em 0 6em 0;
+        h1 {
+            color: #fff;
+            font-size: 3em;
+            font-family: 'Signika';
+            margin-bottom: 0.5em;
+        }
+        p {
+            color: #fff;
+            font-size: 1.5em;
+            opacity: 0.5;
+            position: relative;
+            margin: 0 0 1.5em 0;
+            width: 60%;
+            transform: translate(32%);
+        }
+        .button {
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Signika';
+            font-size: 1.5em;
+            font-weight: 600;
+            border: 2px solid rgba(200, 200, 200, 0.2);
+            padding: 0.5em 1em;
+            &:hover {
+                background-color: rgba(197, 195, 195, 0.1);
+                transition: 0.5s;
+            }
+        }
+    }
+}
+
+// main
+.wrapper {
+    position: relative;
+    padding: 6em 0 4em 0;
+    background-color: #062038;
+    .inner {
+        text-align: center;
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 1em;
+            color: #fff;
+            font-family: 'Signika';
+        }
+        p {
+            color: rgb(102, 99, 99);
+            font-size: 1.3em;
+            font-family: 'Signika';
+        }
+    }
+}
+
+// video-section
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.video {
+    background: rgba(255, 255, 255, 0.075);
+    margin: 0 0em 3em 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5em;
+    img {
+        width: 550px;
+    }
+    p {
+        padding: 1em 0;
+        color: rgb(202, 199, 199) !important;
+    }
+}
+
+// for responsive page
+@import "./_responsive";
